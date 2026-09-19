@@ -1,6 +1,6 @@
 #Lesson 3 : 
 
-#1--> Data Types [] and type(x) [gives us the type of x]
+#1--> Data Types [it tell python what kind of variable is stored] and type(x) [gives us the type of x]
 
 # x  = 100
 # print(type(x))
@@ -12,7 +12,7 @@
 # print(x)
 # print(type(x))
 
-#2-------> TypeCasting []:
+#2-------> TypeCasting [changes a value from 1 data type to another]:
 
 # a = "1000"
 
