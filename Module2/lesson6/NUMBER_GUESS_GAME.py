@@ -1,11 +1,12 @@
-
+import random
 
 # ================================
 # NUMBER GUESSING GAME
 # ================================
 
 # ---------- SETTINGS (given to you) ----------
-secret = 27
+secret = 1
+secret = random.randint(1, 50)
 max_attempts = 5
 count = 0
 guess = 0
@@ -56,7 +57,7 @@ while count < max_attempts and guess != secret:
         remaining_attempts = max_attempts - count
         if remaining_attempts > 0:
             print("Lives left:", end = " ")
-            for i in range(1, remaining_attempts):
+            for i in range(1, remaining_attempts + 1):
                 print("❤️", end = " ")
             print("\n")
         # remaining = max_attempts - count
@@ -66,7 +67,7 @@ while count < max_attempts and guess != secret:
 if guess != secret:
     print("=" * 42)
     print("☠️💀 GAME OVER!!!!!! You used all 5 attempts.")
-    print("The secret number was: 27")
+    print("The secret number was:", secret)
     print("=" * 42)
 # If guess is still not equal to secret, print "Game over"
 # and show the secret number.
